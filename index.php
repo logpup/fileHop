@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    <p>Good Morning</p>
+        <p>Good Morning</p>
+        <form action="index.php">
+            <input type="file" name="file">
+            <input type="submit">
+        </form>
     </body>
 </html>
