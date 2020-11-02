@@ -7,7 +7,13 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <form method="POST" action="upload.php" enctype="multipart/form-data">
+            <div>
+                <span>Upload a File:</span>
+                <input type="file" name="uploadedFile" />
+            </div>
+            <input type="submit" name="uploadBtn" value="Upload" />
+        </form>
         <?php
             if (isset($_SESSION['message']) && $_SESSION['message'])
             {
@@ -49,13 +55,6 @@
                 }
             }
         ?>
-        <form method="POST" action="upload.php" enctype="multipart/form-data">
-            <div>
-                <span>Upload a File:</span>
-                <input type="file" name="uploadedFile" />
-            </div>
-            <input type="submit" name="uploadBtn" value="Upload" />
-        </form>
         <!-- upload files [X] -->
         <!-- view files -->
         <!-- display files -->
