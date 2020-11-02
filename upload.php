@@ -30,9 +30,9 @@
     </head>
     <body>
         <p>Good Morning</p>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="my_file">
-            <input type="submit" name="submit" value="Upload">
-        </form>
+            <form name="form" method="post" action="upload.php" enctype="multipart/form-data" >
+                <input type="file" name="my_file" /><br /><br />
+                <input type="submit" name="submit" value="Upload"/>
+            </form>
     </body>
 </html>
