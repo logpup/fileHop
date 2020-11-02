@@ -10,7 +10,7 @@
         <header>
             <nav>
                 <a href="#">
-                    <!-- where a web logo would go -->
+                    <img src="img/logo.png" alt="logo">
                 </a>
                 <ul>
                     <li><a href="#index.php"></a>Home</li>
