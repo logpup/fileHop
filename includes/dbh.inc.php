@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $dBUsermame = "root";
-$dBPassword = "pullpusH2+4";
+$dBPassword = "";
 $dBName = "loginsystem";
 
 $conn = mysql_connect($servername, $dBUsermame, $dBPassword, $dBName);
