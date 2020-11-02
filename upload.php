@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['submit'])) {
     $file = $_FILES['file'];
-    
+
     $fileName = $_FILES['file']['name'];
     $fileTmpName = $_FILES['file']['tmp_name'];
     $fileSize = $_FILES['file']['size'];
@@ -21,13 +21,13 @@ if (isset($_POST['submit'])) {
                 move_uploaded_file($fileTmpName, $fileDestination);
                 header("Location: index.php?uploadsuccess");
             } else {
-                echo "Your file is too big!"
+                echo "Your file is too big!";
             }
         } else {
-            echo "There was an error uploading your file!"
+            echo "There was an error uploading your file!";
         }
     } else {
-        echo "You cannot upload files of this type!"
+        echo "You cannot upload files of this type!";
     }
 }
 ?>
