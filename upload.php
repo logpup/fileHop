@@ -7,13 +7,20 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        
+        <?php
+            if (isset($_SESSION['message']) && $_SESSION['message'])
+            {
+                printf('<b>%s</b>', $_SESSION['message']);
+                unset($_SESSION['message']);
+            }
+        ?>
         <form enctype="multipart/form-data" method="POST" action="upload.php">
             <input type="hidden" name="MAX_FILE_SIZE" value="30000">
-            <input name="userfile" type="file">
-            <input type="submit" value="Upload">
+            <span>Upload a File: </span>
+            <input name="user_file" type="file">
+            <input name="uploadBtn" type="submit" value="Upload">
         </form>
-        <?php
-        ?>
         <!-- upload files [X] -->
         <!-- view files -->
         <!-- display files -->
