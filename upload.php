@@ -34,7 +34,7 @@
                     if (in_array($fileExtension, $allowedfileExtensions))
                     {
                         // directory in which the uploaded file will be moved
-                        $uploadFileDir = 'uploads';
+                        $uploadFileDir = 'var/www/html/fileHop/uploads';
                         $dest_path = $uploadFileDir . $newFileName;
                         if(move_uploaded_file($fileTmpPath, $dest_path))
                         {
