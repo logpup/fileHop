@@ -13,8 +13,6 @@
             <input type="submit" value="Upload">
         </form>
         <?php
-            $uploadir = 'var/www/html/fileHop/uploads/'
-            $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
         ?>
         <!-- upload files [X] -->
         <!-- view files -->
