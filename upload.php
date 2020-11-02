@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <?php echo php_ini_loaded_file(); ?>
         <p>Good Morning</p>
             <form name="form" method="post" action="upload.php" enctype="multipart/form-data" >
                 <input type="file" name="my_file" /><br /><br />
