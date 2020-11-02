@@ -13,7 +13,7 @@
             <input type="submit" value="Upload">
         </form>
         <?php
-            $temp_file = tempnam(sys_get_temp_dir(), 'Tux');
+            $temp_file = tempnam(sys_get_temp_dir());
             echo $temp_file;
         ?>
         <!-- upload files [X] -->
