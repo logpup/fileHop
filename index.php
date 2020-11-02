@@ -11,8 +11,12 @@
         require "header.php";
     ?>
         <main>
-            <p>You are logged out!</p>
-            <p>You are logged in!</p>
+            <div class="wrapper-main">
+                <section class="section-default">
+                    <p class="login-status">You are logged out!</p>
+                    <p class="login-status">You are logged in!</p>
+                </section>
+            </div>
         </main>
         <form action="upload.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="file">
