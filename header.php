@@ -21,7 +21,7 @@
                     </div>
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="#index.php">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
                             <a href="#">Portfolio</a>
@@ -32,11 +32,7 @@
                         <li>
                             <a href="#"></a>Contact</li>
                     </ul>
-                </div>
-                
-                
-                <div>
-                    <form action="includes/login.inc.php" method="post">
+                    <form class="navbar-form navbar-left" action="includes/login.inc.php" method="post">
                         <input type="text" name="mailuid" placeholder="Username/E-mail...">
                         <input type="password" name="pwd" placeholder="Password...">
                         <button type="submit" name="login-submit">Login</button>
