@@ -8,7 +8,7 @@
     </head>
     <body>
     <?php
-        xdebug_info();
+        php_info();
         require "header.php";
     ?>
         <main>
