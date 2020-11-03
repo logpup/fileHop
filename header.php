@@ -38,7 +38,7 @@
                         <button type="submit" name="login-submit">Login</button>
                     </form>
                     <a href="signup.php">Signup</a>
-                    <form action="includes/logout.inc.php" method="post">
+                    <form class="navbar-form navbar-left" action="includes/logout.inc.php" method="post">
                         <button type="submit" name="logout-submit">Logout</button>
                     </form>
                 </div>
