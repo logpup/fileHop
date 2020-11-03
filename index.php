@@ -8,7 +8,7 @@
     </head>
     <body>
     <?php
-        php_info();
+        phpinfo();
         require "header.php";
     ?>
         <main>
