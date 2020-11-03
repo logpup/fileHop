@@ -12,10 +12,13 @@
     </head>
     <body>
         <header>
-            <nav>
-                <a href="#">
+            <nav class="navbar navbar-default">
+                <div class = "container-fluid">
+                <a class = "navbar-brand" href="#">
                     <img src="img/logo.png" alt="logo">
                 </a>
+                </div>
+                
                 <ul>
                     <li><a href="#index.php"></a>Home</li>
                     <li><a href="#"></a>Portfolio</li>
