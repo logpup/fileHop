@@ -19,11 +19,16 @@
                         <img src="img/logo.png" alt="logo">
                         </a>
                     </div>
-                    <ul>
-                        <li><a href="#index.php"></a>Home</li>
-                        <li><a href="#"></a>Portfolio</li>
-                        <li><a href="#"></a>About me</li>
-                        <li><a href="#"></a>Contact</li>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="#index.php"></a>Home</li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">About me</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>Contact</li>
                     </ul>
                 </div>
                 
