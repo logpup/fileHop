@@ -1,10 +1,8 @@
 <?php
-
 if (isset($_POST['login-submit'])) {
-    // require 'dbh.inc.php';
+    require 'dbh.inc.php';
     $mailuid = $_POST['mailuid'];
     $password = $_POST['pwd'];
-
     if (empty($mailuid) || empty($password)) {
         header("Location: ../index.php?error=emptyfields");
         exit();
@@ -20,7 +18,7 @@ if (isset($_POST['login-submit'])) {
             mysqli_stmt_bind_param($stmt, "ss", "$mailuid, $mailuid");
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
-            if ($row = mysqli_fetch_assoc($result)) {
+            if ($row = mysqli_fetch_assoc()) {
                 $pwdCheck = password_verify($password, $row['pwdUsers']);
                 if ($pwdCheck == false) {
                     header("Location: ../index.php?error=wrongpwd");
