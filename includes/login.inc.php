@@ -15,8 +15,8 @@ if (isset($_POST['login-submit'])) {
             exit();
         }
         else {
-            $stmt->bind_param("ss", $mailuid, "$password");
-            mysqli_stmt_execute($stmt);
+            $stmt->bind_param("ss", $mailuid, "$mailuid");
+            $stmt->execute();
             $result = mysqli_stmt_get_result($stmt);
             if ($row = mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($password, $row['pwdUsers']);
