@@ -10,7 +10,7 @@
                         if ($_GET['error'] == "emptyfields") {
                             echo '<p class = "signuperror">Fill in all fields!</p>'
                         }
-                        else if ($_GET['error'] == "invaliduid"){
+                        else if ($_GET['error'] == "invaliduidmail"){
                             echo '<p class = "signuperror">Invalid username and e-mail!</p>'
                         }
                         else if ($_GET['error'] == "invaliduid") {
@@ -25,6 +25,9 @@
                         else if ($_GET['error'] == "usertaken") {
                             echo '<p class = "signuperror">Username is already taken!</p>'
                         }
+                    }
+                    else if ($_GET['signup'] == "success") {
+                        echo '<p class = "signupsuccess">Signup successful!</p>'
                     }
                     ?>
                     <form action="includes/signup.inc.php" method="post">
