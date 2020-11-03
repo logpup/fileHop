@@ -19,8 +19,10 @@
                         <img src="img/logo.png" alt="logo">
                         </a>
                     </div>
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="#index.php"></a>Home</li>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#index.php">Home</a>
+                        </li>
                         <li>
                             <a href="#">Portfolio</a>
                         </li>
