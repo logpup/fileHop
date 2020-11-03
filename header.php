@@ -14,17 +14,20 @@
         <header>
             <nav class="navbar navbar-default">
                 <div class = "container-fluid">
-                <a class = "navbar-brand" href="#">
-                    <img src="img/logo.png" alt="logo">
-                </a>
+                    <div class = navbar-header>
+                        <a class = "navbar-brand" href="#">
+                        <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#index.php"></a>Home</li>
+                        <li><a href="#"></a>Portfolio</li>
+                        <li><a href="#"></a>About me</li>
+                        <li><a href="#"></a>Contact</li>
+                    </ul>
                 </div>
                 
-                <ul>
-                    <li><a href="#index.php"></a>Home</li>
-                    <li><a href="#"></a>Portfolio</li>
-                    <li><a href="#"></a>About me</li>
-                    <li><a href="#"></a>Contact</li>
-                </ul>
+                
                 <div>
                     <form action="includes/login.inc.php" method="post">
                         <input type="text" name="mailuid" placeholder="Username/E-mail...">
