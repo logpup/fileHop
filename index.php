@@ -21,6 +21,17 @@
                             echo '<p class="login-status">You are logged out!</p>';
                         }
                     ?>
+                </section>
+            </div>
+        </main>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit" name="submit">Upload</button>
+        </form>
+        <form action="deletefile.php" method="POST">
+            <input type="text" name="filename" placeholder="Seperate each name with a comma (,)" style="width: 300px;">
+            <button type="submit" name="submit">Delete File</button>
+        </form>
     <?php
         require "footer.php";
     ?>
