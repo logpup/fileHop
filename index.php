@@ -28,6 +28,9 @@
             <input type="file" name="file">
             <button type="submit" name="submit">Upload</button>
         </form>
+        <form action="deletefile.php" method="POST">
+            <button type="submit" name="submit">Delete File</button>
+        </form>
     <?php
         require "footer.php";
     ?>
