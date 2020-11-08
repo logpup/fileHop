@@ -41,7 +41,7 @@
     if (is_dir($dir)) {
         if ($dh = opendir($dir)) {
             while (($file = readdir($dh)) !== false){
-                if (is_file($file) == true) {
+                if (filetype($file) == file) {
                     echo $file . "<br>";
                 }
                 else {
