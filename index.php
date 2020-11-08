@@ -40,7 +40,10 @@
     $dir = "uploads";
     if (is_dir($dir)) {
         if ($dh = opendir($dir)) {
-            echo "true";
+            while (($file = readdir($dh)) !== false){
+                echo "filename:" . $file . "<br>";
+              }
+              closedir($dh);
             }
         }
     
