@@ -4,8 +4,8 @@
     if (!unlink($path)) {
         echo "Error deleting file";
     }
-    else if (unlink($path)) {
-        header("Location: index.php");
+    else() {
+        header("Location: index.php?unlink=supersuccess";
     }
-    header("Location: index.php");
+    header("Location: index.php?unlink=success");
     
