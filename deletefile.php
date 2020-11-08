@@ -4,7 +4,7 @@
     if (!unlink($path)) {
         echo "Error deleting file";
     }
-    else {
+    else if (unlink($path)) {
         ("File has been deleted");
     }
     
