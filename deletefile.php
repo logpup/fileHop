@@ -1,6 +1,5 @@
 <?php
-    $file = $_GET['filename'];
-    echo '$file';
+    echo $_POST['filename'];
     // $path = "uploads/.'$file'";
     // if (!unlink($path)) {
     //     echo "You have an error";
