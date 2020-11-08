@@ -37,7 +37,7 @@
             <button type="submit" name="submit">Delete File</button>
         </form>
     <?php
-    $dir = "/uploads/";
+    $dir = "/uploads";
     if (is_dir($dir)) {
         echo "true";
     }
