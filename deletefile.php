@@ -5,7 +5,6 @@
         echo "Error deleting file";
     }
     else if (unlink($path)) {
-        echo "File has been deleted";
+        header("Location: ../landing.php");
     }
-    header("Location: ../index.php");
     
