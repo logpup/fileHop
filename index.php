@@ -57,6 +57,9 @@
     }
     ?>
     <?php
+        require "deletefile.php";
+    ?>
+    <?php
         require "footer.php";
     ?>
     </body>

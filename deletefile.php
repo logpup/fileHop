@@ -5,7 +5,7 @@
         echo "Error deleting file";
     }
     else {
-        header("Location: index.php?unlink=supersuccess");
+        echo "File deleted";
+        header("Location: index.php?unlink=success");
     }
-    // header("Location: index.php?unlink=success");
     
