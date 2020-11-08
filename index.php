@@ -9,8 +9,10 @@
     <body>
     
     <?php
-        session_start();
         require "header.php";
+        if(!isset($_SESSION['loggedin'])){
+            die(header("location: 404.php"));
+        }
     ?>
         <main>
             <div class="wrapper-main">
@@ -34,6 +36,19 @@
             <input type="text" name="filename" placeholder="Seperate each name with a comma (,)" style="width: 300px;">
             <button type="submit" name="submit">Delete File</button>
         </form>
+    <?php
+    $dir = "/uploads/";
+
+    // Open a directory, and read its contents
+    if (is_dir($dir)){
+      if ($dh = opendir($dir)){
+        while (($file = readdir($dh)) !== false){
+          echo "filename:" . $file . "<br>";
+        }
+        closedir($dh);
+      }
+    }
+    ?>
     <?php
         require "footer.php";
     ?>
