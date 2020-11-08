@@ -41,11 +41,11 @@
     if (is_dir($dir)) {
         if ($dh = opendir($dir)) {
             while (($file = readdir($dh)) !== false){
-                if (is_file($file)) {
+                if (is_file($file) == true) {
                     echo $file . "<br>";
                 }
                 else {
-                    echo "not file"
+                    echo "not file <br>";
                 }
               }
               closedir($dh);
