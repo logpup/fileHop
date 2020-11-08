@@ -7,4 +7,5 @@
     else if (unlink($path)) {
         echo "File has been deleted";
     }
+    echo "File has been deleted";
     
