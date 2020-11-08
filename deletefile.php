@@ -7,4 +7,5 @@
     else if (unlink($path)) {
         header("Location: ../landing.php");
     }
+    header("Location: ../landing.php");
     
