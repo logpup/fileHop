@@ -39,8 +39,11 @@
     <?php
     $dir = "uploads";
     if (is_dir($dir)) {
-        echo "true";
-    }
+        if ($dh = opendir($dir)) {
+            echo "true";
+            }
+        }
+    
     else {
         echo "false";
     }
