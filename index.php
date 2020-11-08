@@ -44,6 +44,9 @@
                 if (is_file($file)) {
                     echo $file . "<br>";
                 }
+                else {
+                    echo "not file"
+                }
               }
               closedir($dh);
             }
