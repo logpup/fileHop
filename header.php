@@ -17,6 +17,7 @@
                     <div class = navbar-header>
                         <a class = "navbar-brand" href="#">
                         <img src="img/logo.png" alt="logo">
+                        <p>FileHop</p>
                         </a>
                     </div>
                     <ul class="nav navbar-nav">
