@@ -16,7 +16,7 @@
                 <div class = "container-fluid">
                     <div class = navbar-header>
                         <a class = "navbar-brand" href="#">
-                        <img src="img/logo.png" alt="logo">
+                        <img src="img/logo.gif" alt="logo">
                         <p>FileHop</p>
                         </a>
                     </div>
