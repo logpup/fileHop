@@ -10262,7 +10262,7 @@
   }
   /*# sourceMappingURL=bootstrap.css.map */
 
-  .logo {
-    width: 100px;
-    height: 100px;
+  img.logo {
+    width: 50px;
+    height: auto;
   }
