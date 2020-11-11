@@ -44,9 +44,6 @@
                 if ($file != "." && $file != "..") {
                     echo $file . "<br>";
                 }
-                else {
-                    echo "not file <br>";
-                }
               }
               closedir($dh);
             }
