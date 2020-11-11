@@ -12,12 +12,12 @@
     </head>
     <body>
         <header>
+            <h3>FileHop</h3>
             <nav class="navbar navbar-default">
                 <div class = "container-fluid">
                     <div class = navbar-header>
                         <a class = "navbar-brand" href="#">
-                        <img src="img/logo.gif" alt="logo">
-                        <p>FileHop</p>
+                        <img class = "logo" src="img/logo.gif" alt="logo">
                         </a>
                     </div>
                     <ul class="nav navbar-nav">
